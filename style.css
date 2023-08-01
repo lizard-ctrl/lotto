@@ -18,11 +18,14 @@ body, html {
   overflow:scroll;
 }
 
+.innergrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adjust the gap between boxes as needed */
+  height: 50%;
+}
+
 .inner-box {
-  position: absolute;
-  top: 2px; /* Adjust the top position of inner boxes as needed */
-  left: 2px; /* Adjust the left position of inner boxes as needed */
-  right: 2px; /* Adjust the right position of inner boxes as needed */
-  bottom: 2px; /* Adjust the bottom position of inner boxes as needed */
-  background-color: #ffcc00; /* Color of inner boxes */
+  background-color: #ffcc00; 
+ /* Color of inner boxes */
 }
