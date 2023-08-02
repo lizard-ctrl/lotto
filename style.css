@@ -21,12 +21,24 @@ body, html {
 }
 
 .box {
-  border: 3px solid rgb(255,0,0);
+  border: 3px solid;
   background-image: url("https://cdn.glitch.global/9ddd7a16-3069-484b-b296-057d01653e0f/sparkley_piink_rose.gif?v=1691006965825");
   background-repeat: repeat;
   position: relative;
   overflow:scroll;
 }
+
+ .random-div {
+            width: 200px;
+   position:absolute;
+   top: 5%;
+            height: 200px;
+            margin: 50px auto;
+            border: 2px solid;
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+        }
 
 .innergrid{
   display: grid;

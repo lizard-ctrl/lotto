@@ -128,7 +128,113 @@
          </div>
     </div>
     
+     <div class="box" style="height: 130%; top:-60%; left: 8%; border: 3px solid rgb(252, 148, 3);
+  background-color: rgb(57, 3, 252);">
+     <div class="innergrid">
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+         </div>
+    </div>
+    
+    
+    <div class="box" style="height: 125%; left: -1%; border: 3px solid rgb(132, 32, 232);
+  background-color: rgb(235, 52, 229);">
+     <div class="innergrid">
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+         </div>
+    </div>
+    
+    
+    <div class="box" style="height: 80%; top:65%; left: -12%; border: 3px solid rgb(132, 32, 232);
+  background-color: rgb(235, 52, 229);">
+     <div class="innergrid">
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+         </div>
+    </div>
+    
+    
+    <div class="box" style="height: 110%; top:-25%; left: 3%; border: 3px solid rgb(132, 32, 232);
+  background-color: rgb(235, 52, 229);">
+     <div class="innergrid">
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+         </div>
+    </div>
+    
+    
+    <div class="box" style="height: 50%; top:30%; left: -5%; border: 3px solid rgb(132, 32, 232);
+  background-color: rgb(235, 52, 229);">
+      <p id="ticket1">
+        LOTTERYLOTTERYLOTTERY
+      </p>
+     <div class="innergrid">
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+         </div>
+    </div>
+    
+    
+    <div class="box" style="height: 35%; top:50%; left: -9%; border: 3px solid rgb(132, 32, 232);
+  background-color: rgb(235, 52, 229);">
+     <div class="innergrid">
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+         </div>
+    </div>
+    
   </div>
+  
+ 
+  
+     <script>
+        function getRandomNeonColor() {
+            const neonColors = ['#ff00ff', '#00ffff', '#ffff00', '#ff0000', '#00ff00', '#0000ff'];
+            return neonColors[Math.floor(Math.random() * neonColors.length)];
+        }
+
+        // Function to generate a random number between min and max
+        function getRandomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Get all elements with class "random-div" and set their background, border, height, and width to random values
+        const randomDivs = document.getElementsByClassName('box');
+        for (let i = 0; i < randomDivs.length; i++) {
+            const randomNeonColor = getRandomNeonColor();
+            randomDivs[i].style.backgroundColor = randomNeonColor;
+            randomDivs[i].style.borderColor = randomNeonColor;
+            const randomHeight = getRandomInRange(100, 150); // Random height between 100% and 150%
+            const randomWidth = getRandomInRange(100, 150); // Random width between 100% and 150%
+            randomDivs[i].style.height = `${randomHeight}%`;
+            randomDivs[i].style.width = `${randomWidth}%`;
+        }
+  </script>
 </body>
 </html>
    
