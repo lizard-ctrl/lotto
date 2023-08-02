@@ -182,9 +182,7 @@
     
     <div class="box" style="height: 50%; top:30%; left: -5%; border: 3px solid rgb(132, 32, 232);
   background-color: rgb(235, 52, 229);">
-      <p id="ticket1">
-        LOTTERYLOTTERYLOTTERY
-      </p>
+       <p class="random-font">Random Neon Color, Size, Border, and Font 3</p>
      <div class="innergrid">
       <div class="inner-box"></div>
       <div class="inner-box"></div>
@@ -213,8 +211,9 @@
  
   
      <script>
-           function getRandomNeonColor() {
-            const neonColors = ['#0c8bfa', '#e04ad4', '#ac0afc', '#fc0a43', '#fc8f0a', '#0afc2a'];
+      // Function to generate a random neon color
+        function getRandomNeonColor() {
+            const neonColors = ['#ff00ff', '#00ffff', '#ffff00', '#ff0000', '#00ff00', '#0000ff'];
             return neonColors[Math.floor(Math.random() * neonColors.length)];
         }
 
@@ -223,7 +222,13 @@
             return Math.random() * (max - min) + min;
         }
 
-        // Get all elements with class "random-div" and set their background, border, height, and width to random values
+        // Function to get a random font family from the preloaded fonts
+        function getRandomFontFamily() {
+            const fontFamilies = ['Font1', 'Font2','Font3','Font4'];
+            return fontFamilies[Math.floor(Math.random() * fontFamilies.length)];
+        }
+
+        // Get all elements with class "random-div" and set their background, border, height, width, and font to random values
         const randomDivs = document.getElementsByClassName('box');
         for (let i = 0; i < randomDivs.length; i++) {
             let randomBackground = getRandomNeonColor();
@@ -234,13 +239,15 @@
             }
 
             const randomBorderSize = getRandomInRange(2, 10); // Random border size between 2px and 10px
+            const randomFontFamily = getRandomFontFamily();
 
             randomDivs[i].style.backgroundColor = randomBackground;
             randomDivs[i].style.borderColor = randomBorder;
             randomDivs[i].style.borderWidth = `${randomBorderSize}px`;
+            randomDivs[i].style.fontFamily = randomFontFamily;
 
-            const randomHeight = getRandomInRange(100, 200); // Random height between 100% and 150%
-            const randomWidth = getRandomInRange(100, 200); // Random width between 100% and 150%
+            const randomHeight = getRandomInRange(100, 150); // Random height between 100% and 150%
+            const randomWidth = getRandomInRange(100, 150); // Random width between 100% and 150%
             randomDivs[i].style.height = `${randomHeight}%`;
             randomDivs[i].style.width = `${randomWidth}%`;
         }
