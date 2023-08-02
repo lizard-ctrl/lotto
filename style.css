@@ -1,7 +1,23 @@
 @font-face {
-    font-family: 'misterpixel';
+    font-family: 'font1';
     src: url('https://cdn.glitch.global/ac16c84a-b429-450b-8ee2-7d30522c16f4/MP16REG.ttf?v=1687933494293');
 }
+
+@font-face {
+    font-family: 'font2';
+    src: url('https://cdn.glitch.global/9ddd7a16-3069-484b-b296-057d01653e0f/BackOut.woff?v=1691009204606');
+}
+
+@font-face {
+    font-family: 'font3';
+    src: url('https://cdn.glitch.global/9ddd7a16-3069-484b-b296-057d01653e0f/Pilowlava-Regular.woff?v=1691009293422');
+}
+
+@font-face {
+    font-family: 'font4';
+    src: url('https://cdn.glitch.global/9ddd7a16-3069-484b-b296-057d01653e0f/outward-borders-webfont.woff?v=1691009492017');
+}
+
 
 body, html {
   margin: 0;
@@ -10,7 +26,7 @@ body, html {
 }
 
 #ticket1{
-  font-family: misterpixel;
+  font-family: font4;
 }
 
 .grid {
@@ -55,3 +71,7 @@ body, html {
   background-color: #ffcc00; 
  /* Color of inner boxes */
 }
+
+  .random-font {
+            font-family: 'Font1', 'Font2','Font3','Font4', sans-serif; /* Fallback to sans-serif if the fonts fail to load */
+        }
