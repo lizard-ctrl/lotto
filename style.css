@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'misterpixel';
+    src: url('https://cdn.glitch.global/ac16c84a-b429-450b-8ee2-7d30522c16f4/MP16REG.ttf?v=1687933494293');
+}
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+#ticket1{
+  font-family: misterpixel;
 }
 
 .grid {
@@ -22,13 +31,14 @@ body, html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
-  top: 30%;
+  
   padding: 3%;
   gap: 10px; /* Adjust the gap between boxes as needed */
   height: 50%;
 }
 
 .inner-box {
+  border: 3px solid rgb(132, 32, 232);
   background-color: #ffcc00; 
  /* Color of inner boxes */
 }
