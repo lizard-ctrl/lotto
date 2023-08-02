@@ -214,7 +214,7 @@
   
      <script>
            function getRandomNeonColor() {
-            const neonColors = ['#ff00ff', '#00ffff', '#ffff00', '#ff0000', '#00ff00', '#0000ff'];
+            const neonColors = ['#0c8bfa', '#e04ad4', '#ac0afc', '#fc0a43', '#fc8f0a', '#0afc2a'];
             return neonColors[Math.floor(Math.random() * neonColors.length)];
         }
 
@@ -224,7 +224,7 @@
         }
 
         // Get all elements with class "random-div" and set their background, border, height, and width to random values
-        const randomDivs = document.getElementsByClassName('r');
+        const randomDivs = document.getElementsByClassName('box');
         for (let i = 0; i < randomDivs.length; i++) {
             let randomBackground = getRandomNeonColor();
             let randomBorder = getRandomNeonColor();
@@ -239,8 +239,8 @@
             randomDivs[i].style.borderColor = randomBorder;
             randomDivs[i].style.borderWidth = `${randomBorderSize}px`;
 
-            const randomHeight = getRandomInRange(100, 150); // Random height between 100% and 150%
-            const randomWidth = getRandomInRange(100, 150); // Random width between 100% and 150%
+            const randomHeight = getRandomInRange(100, 200); // Random height between 100% and 150%
+            const randomWidth = getRandomInRange(100, 200); // Random width between 100% and 150%
             randomDivs[i].style.height = `${randomHeight}%`;
             randomDivs[i].style.width = `${randomWidth}%`;
         }
