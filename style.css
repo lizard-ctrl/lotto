@@ -22,7 +22,8 @@ body, html {
 
 .box {
   border: 3px solid rgb(255,0,0);
-  background-color: rgb(201, 62, 144);
+  background-image: url("https://cdn.glitch.global/9ddd7a16-3069-484b-b296-057d01653e0f/sparkley_piink_rose.gif?v=1691006965825");
+  background-repeat: repeat;
   position: relative;
   overflow:scroll;
 }
